@@ -1,3 +1,21 @@
+# version compatibility
+
+node 18.18.0
+nx v18.3.3 workspace.
+ng 17.3.0
+
+## scripts
+
+
+npx create-nx-workspace nx-workspace-ng17 :  angular  > integrated > esbuild > scss
+
+delete default ng project
+nx g @nx/workspace:remove --projectName=nx-workspace-ng17
+
+generate guide ng project
+g @nx/angular:application --name=guide --bundler=esbuild --directory=apps/guide --projectNameAndRootFormat=as-provided
+
+
 # NxWorkspaceNg17
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
